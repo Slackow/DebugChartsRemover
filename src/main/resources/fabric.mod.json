@@ -3,22 +3,13 @@
   "id": "debugchartsremover",
   "version": "${version}",
   "name": "DebugChartsRemover",
-  "description": "",
+  "description": "Removes the comically long line in the F3 menu",
   "authors": [],
   "contact": {},
   "license": "MIT",
   "icon": "assets/debugchartsremover/icon.png",
   "environment": "client",
-  "entrypoints": {
-    "client": [
-      "com.slackow.debugchartsremover.client.DebugchartsremoverClient"
-    ],
-    "main": [
-      "com.slackow.debugchartsremover.Debugchartsremover"
-    ]
-  },
   "mixins": [
-    "debugchartsremover.mixins.json",
     {
       "config": "debugchartsremover.client.mixins.json",
       "environment": "client"

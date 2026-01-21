@@ -11,19 +11,10 @@ base {
 }
 
 loom {
-    splitEnvironmentSourceSets()
-
     mods {
         "debugchartsremover" {
             sourceSet sourceSets.main
-            sourceSet sourceSets.client
         }
-    }
-}
-
-fabricApi {
-    configureDataGeneration {
-        client = true
     }
 }
 
