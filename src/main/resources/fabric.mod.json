@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "debugchartsremover",
+  "version": "${version}",
+  "name": "DebugChartsRemover",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/debugchartsremover/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.slackow.debugchartsremover.client.DebugchartsremoverClient"
+    ],
+    "main": [
+      "com.slackow.debugchartsremover.Debugchartsremover"
+    ]
+  },
+  "mixins": [
+    "debugchartsremover.mixins.json",
+    {
+      "config": "debugchartsremover.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
